@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>GSoC 2020 with TARDIS - Jaladh Singhal</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css" />
-    </noscript>
-  </head>
-  <body class="homepage is-preload">
-    <div id="page-wrapper">
-      <!-- Header -->
-      <div id="header">
-        <!-- Inner -->
-        <div class="inner">
-          <header>
-            <h1><a href="index.html" id="logo">GSoC'20 with TARDIS</a></h1>
-            <hr />
-            <p>
-              Final report of my work during Google Summer of Code 2020 at
-              <a href="https://github.com/tardis-sn">TARDIS</a>
-            </p>
-          </header>
-          <footer>
-            <a href="#banner" class="button scrolly"> Dive in </a>
-          </footer>
-        </div>
 
-        <!-- Nav -->
-        <nav id="nav">
-          <ul>
-            <li><a href="#overview">Overview</a></li>
-            <li>
-              <a href="#">Work Product</a>
-              <ul>
-                <li><a href="#">Lorem ipsum dolor</a></li>
-                <li><a href="#">Magna phasellus</a></li>
-                <li><a href="#">Etiam dolore nisl</a></li>
-                <li><a href="#">Veroeros feugiat</a></li>
-              </ul>
-            </li>
-            <li><a href="#">What's Next</a></li>
-            <li><a href="#">Conclusion</a></li>
-          </ul>
-        </nav>
+<head>
+  <title>GSoC 2020 with TARDIS - Jaladh Singhal</title>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
+</head>
+
+<body class="homepage is-preload">
+  <div id="page-wrapper">
+    <!-- Header -->
+    <div id="header">
+      <!-- Inner -->
+      <div class="inner">
+        <header>
+          <h1><a href="index.html" id="logo">GSoC'20 with TARDIS</a></h1>
+          <hr />
+          <p>
+            Final report of my work during Google Summer of Code 2020 at
+            <a href="https://github.com/tardis-sn">TARDIS</a>
+          </p>
+        </header>
+        <footer>
+          <a href="#banner" class="button scrolly"> Dive in </a>
+        </footer>
       </div>
 
-      <!-- Banner -->
-      <section id="banner">
-        <article id="main" class="container special">
-          <header>
-            <p>
-              And GSoC’20 has finally ended! Last three months of my project
-              gave me an incredible learning experience. Not only did I improve
-              my software development skills but I also got to know about how
-              Astrophysics Research happens. Following is the report of the work
-              I did in these Summers at TARDIS.
-            </p>
-          </header>
-        </article>
-      </section>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li>
+            <a href="#work-product">Work Product</a>
+            <ul>
+              <li><a href="#shell-info-widget">Shell Info Widget</a></li>
+              <li><a href="#line-info-widget">Line Info Widget</a></li>
+              <li><a href="#demo-of-widgets-in-docs">Demonstration of Widgets in
+                  Docs</a></li>
+              <li><a href="#other-contributions">Other Contributions</a></li>
+            </ul>
+          </li>
+          <li><a href="#whats-next">What's Next</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+    </div>
 
-      <!-- Carousel -->
-      <!-- <section class="carousel">
+    <!-- Banner -->
+    <section id="banner">
+      <article id="main" class="container special">
+        <header>
+          <p>
+            And GSoC’20 has finally ended! Last three months of my project
+            gave me an incredible learning experience. Not only did I improve
+            my software development skills but I also got to know about how
+            Astrophysics Research happens. Following is the report of the work
+            I did in these Summers at TARDIS.
+          </p>
+        </header>
+      </article>
+    </section>
+
+    <!-- Carousel -->
+    <!-- <section class="carousel">
         <div class="reel">
           <article>
             <a href="#" class="image featured"
@@ -190,68 +191,61 @@
         </div>
       </section> -->
 
-      <!-- Main -->
-      <div class="wrapper style2">
-        <article id="main" class="container special">
-          <a href="#" class="image featured">
-            <img src="images/pic06.jpg" alt="" />
-          </a>
-          <header>
-            <h2 id="overview">Overview</h2>
-          </header>
-          <p>
-            <a href="https://github.com/tardis-sn">TARDIS</a> is an Open Source
-            Astrophysics Org which provides Python packages for rapid spectral
-            modeling of
-            <a href="">Supernovae</a>. In
-            simpler terms, it allows researchers to quickly simulate the
-            exploding Stars. In GSoC’20, <a href="">my project</a> was to build
-            a GUI that makes it easier for researchers to explore the data of a
-            simulated Supernova model, without knowing its internal data
-            structure. This GUI needed to be implemented as several Jupyter
-            widgets that can run within Notebook by simply passing the model to
-            a tardis constructor. Hence most of my work revolved around
-            developing a <a href="">widgets subpackage</a> within
-            <a href="">tardis</a> that allows users to construct a widget of
-            their interest for the model they’re working with.
-          </p>
-          <p>
-            In this report, you can find the code of all the widgets I developed
-            in the last three months of GSoC. But if you’re interested to know
-            about the cool Astrophysics concepts behind my work, I encourage you
-            to check out my blog series:
-            <ul>
-              <li>
-                <a href="">GSoC’20 Episode-1: Interactions with Supernovae!</a> -
-                Importance of studying Supernovae; chemical elements present in
-                shells of Supernova ejecta and how they leave their fingerprint in
-                the observed light spectrum.
-              </li>
-              <li>
-                <a href=""
-                  >GSoC’20 Episode-2: Unpacking the Data hidden in Light</a
-                >
-                - Different interactions experienced by the light packets escaping
-                a Supernova, and how TARDIS constructs spectrum from the
-                information packets have.
-              </li>
-              <li>GSoC’20 Episode-3: [Yet to be published]</li>
-            </ul>
-          </p>
-        </article>
-      </div>
+    <!-- Overview -->
+    <div id="overview" class="wrapper style2">
+      <article id="main" class="container special">
+        <a href="#" class="image featured">
+          <img src="images/pic06.jpg" alt="" />
+        </a>
+        <header>
+          <h2>Overview</h2>
+        </header>
+        <p>
+          <a href="https://github.com/tardis-sn">TARDIS</a> is an Open Source
+          Astrophysics Org which provides Python packages for rapid spectral
+          modeling of <a href="">Supernovae</a>. In simpler terms, it allows
+          researchers to quickly simulate the exploding Stars. In GSoC’20,
+          <a href="">my project</a> was to build a GUI that makes it easier
+          for researchers to explore the data of a simulated Supernova model,
+          without knowing its internal data structure. This GUI needed to be
+          implemented as several Jupyter widgets that can run within Notebook
+          by simply passing the model to a tardis constructor. Hence most of
+          my work revolved around developing a
+          <a href="">widgets subpackage</a> within <a href="">tardis</a> that
+          allows users to construct a widget of their interest for the model
+          they’re working with.
+        </p>
+        <p>
+          In this report, you can find the code of all the widgets I developed
+          in the last three months of GSoC. But if you’re interested to know
+          about the cool Astrophysics concepts behind my work, I encourage you
+          to check out my blog series:
+        </p>
+        <ul>
+          <li>
+            <a href="">GSoC’20 Episode-1: Interactions with Supernovae!</a> -
+            Importance of studying Supernovae; chemical elements present in
+            shells of Supernova ejecta and how they leave their fingerprint in
+            the observed light spectrum.
+          </li>
+          <li>
+            <a href="">GSoC’20 Episode-2: Unpacking the Data hidden in Light</a>
+            - Different interactions experienced by the light packets escaping
+            a Supernova, and how TARDIS constructs spectrum from the
+            information packets have.
+          </li>
+          <li>GSoC’20 Episode-3: [Yet to be published]</li>
+        </ul>
+      </article>
+    </div>
 
-      <!-- Features -->
-      <div class="wrapper style1">
-        <section id="features" class="container special">
-          <header>
-            <h2>Morbi ullamcorper et varius leo lacus</h2>
-            <p>
-              Ipsum volutpat consectetur orci metus consequat imperdiet duis
-              integer semper magna.
-            </p>
-          </header>
-          <div class="row">
+    <!-- Work Product -->
+    <div id="work-product" class="wrapper style1">
+      <article class="container special">
+        <header>
+          <h2>Work Product</h2>
+        </header>
+        <!-- <div class="row">
             <article class="col-4 col-12-mobile special">
               <a href="#" class="image featured"
                 ><img src="images/pic07.jpg" alt=""
@@ -294,14 +288,153 @@
                 consequat integer interdum.
               </p>
             </article>
-          </div>
+          </div> -->
+        <p>
+          The project deliverables I produced during GSoC’20 can be summarized
+          as follows:
+        </p>
+        <section id="shell-info-widget">
+          <h3>Shell Info Widget</h3>
+          <p>
+            This widget allows users to explore the chemical abundances in
+            different shells (computational partitions of the modeled Supernova
+            ejecta. It consists of four interlinked tables - clicking on any row
+            in a table, updates the abundance data in the table(s) right of it.
+          </p>
+          <img src="images/pic06.jpg" alt="" />
+          <ul>
+            <li>
+              Developed a demo of Shell Info Widget as a notebook where I
+              developed its prototype and then progressively refined to make it
+              ready for putting it in the module - <a
+                href="https://github.com/tardis-sn/tardis/pull/1146"> #1146 </a>
+            </li>
+            <li>
+              Created a subpackage for widgets and wrote an object-oriented
+              interface (as a module) for constructing and displaying Shell Info
+              Widget, along with the unit tests and documentation - <a
+                href="https://github.com/tardis-sn/tardis/pull/1166"> #1166 </a>
+            </li>
+          </ul>
         </section>
-      </div>
+        <section id="line-info-widget">
+          <h3>Line Info Widget</h3>
+          <p>
+            This widget allows users to explore the <a href="">atomic lines</a>
+            responsible for producing features in the simulated spectrum. You
+            can select any wavelength range in the spectrum interactively to
+            display a table giving the fraction of light packets that
+            experienced their last interaction with each species. Using toggle
+            buttons, you can specify whether to filter the selected range by the
+            emitted or absorbed wavelengths of packets. Clicking on a row in the
+            species table shows packet counts for each last line interaction of
+            the selected species, which can be grouped in several ways.
+          </p>
+          <img src="images/pic06.jpg" alt="" />
+          <ul>
+            <li>
+              Developed a demo of Line Info Widget in a notebook where I did
+              several experimentations to make it a fully functional widget (as
+              above) by iteratively adding features to a basic prototype - <a
+                href="https://github.com/tardis-sn/tardis/pull/1187"> #1187 </a>
+            </li>
+            <li>
+              Modified legacy implementation of TARDIS <a href="">Kromer
+                Plot</a> (spectrum as a stacked area chart showing different
+              packets’ interactions it is composed of) so that it can be used in
+              Line Info Widget instead of a simple spectrum. I made sure it can
+              be constructed directly from a simulation object or a saved
+              simulation model (HDF) and has data of both real and virtual
+              packets. But before I could convert its plotting method
+              (implemented in matplotlib) to interactive <a href="">plotly</a>,
+              we realized it’s overly complicated & outdated and needs to be
+              fixed first. So we decided to put it on hold until we release Line
+              Info Widget with the simple spectrum, to manage the GSoC deadline
+              - <a href="https://github.com/tardis-sn/tardis/pull/1241"> #1241
+              </a>
+            </li>
+            <li>
+              Created an object-oriented interface for generating Line Info
+              Widget as a module within widgets subpackage, along with unit
+              tests and code documentation. Also made several restructuring
+              changes in widgets subpackage to improve it - <a
+                href="https://github.com/tardis-sn/tardis/pull/1264"> #1264 </a>
+            </li>
+          </ul>
+        </section>
+        <section id="demo-of-widgets-in-docs">
+          <h3>Demonstration of Widgets in Docs</h3>
+          <p>
+            The essential part of any GUI is to let users know not only how to
+            use it but also how to make the best use of it. For this, I created
+            a <strong>TARDIS Widgets</strong> section in TARDIS docs wherein I
+            included a tutorial notebook to generate widgets so that anyone can
+            quickly try it out themselves. Besides I included a page to explain
+            in detail what each widget does and the helpful features they offer.
+            Thanks to the excellent review by my mentors, I made sure that the
+            explanation of physics involved in using the widgets is accurate.
+            You can access this at <a
+              href="https://tardis-sn.github.io/tardis/running/tardis_widgets">
+              TARDIS Widgets </a> section in our docs, as soon as <a
+              href="https://github.com/tardis-sn/tardis/pull/1280"> #1280 </a>
+            is merged.
+          </p>
+        </section>
+        <section id="other-contributions">
+          <h3>Other Contributions</h3>
+          <p>
+            Besides working on the widgets (my main project), I came across
+            several other things that needed to be done for making TARDIS
+            better:
+          </p>
+          <ul>
+            <li>
+              Applied code style <a href="">Black</a> throughout the TARDIS to
+              make code more readable - <a
+                href="https://github.com/tardis-sn/tardis/pull/1201"> #1201
+              </a>, <a href="https://github.com/tardis-sn/tardis/pull/1213">
+                #1213 </a>
+            </li>
+            <li>
+              Added contributor guidelines to help new contributors - <a
+                href="https://github.com/tardis-sn/tardis/pull/1237"> #1237 </a>
+            </li>
+            <li>
+              Fixed how virtual packet properties are saved in HDF by
+              determining the virtual packet logging status at run-time instead
+              of saving it in configuration file - <a
+                href="https://github.com/tardis-sn/tardis/pull/1254"> #1254 </a>
+            </li>
+            <li>
+              Git-ignored several files that gets generated while developing
+              TARDIS - <a href="https://github.com/tardis-sn/tardis/pull/1139">
+                #1139 </a>, <a
+                href="https://github.com/tardis-sn/tardis/pull/1151"> #1159 </a>
+            </li>
+            <li>
+              Fixed kromer plotter producing double plots when used in notebook
+              - <a href="https://github.com/tardis-sn/tardisanalysis/pull/34">
+                tardisanalysis#34 </a>
+            </li>
+            <li>
+              Made plot size in quickstart notebook of TARDIS docs larger - <a
+                href="https://github.com/tardis-sn/tardis/pull/1149"> #1149 </a>
+            </li>
+            <li>
+              Opened multiple issues for the overall improvement of TARDIS which
+              can be accessed from <a
+                href="https://github.com/issues?q=author%3Ajaladh-singhal+created%3A2020-04-01..2020-08-31+org%3Atardis-sn+is%3Aissue">
+                this list </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
 
-      <!-- Footer -->
-      <div id="footer">
-        <div class="container">
-          <!-- <div class="row">
+    <!-- Footer -->
+    <div id="footer">
+      <div class="container">
+        <!-- <div class="row">
             
             <section class="col-4 col-12-mobile">
               <header>
@@ -425,75 +558,71 @@
             </section>
           </div>
           <hr /> -->
-          <div class="row">
-            <div class="col-12">
-              <!-- Contact -->
-              <section class="contact">
-                <header>
-                  <h3>Nisl turpis nascetur interdum?</h3>
-                </header>
-                <p>
-                  Urna nisl non quis interdum mus ornare ridiculus egestas
-                  ridiculus lobortis vivamus tempor aliquet.
-                </p>
-                <ul class="icons">
-                  <li>
-                    <a href="#" class="icon brands fa-twitter"
-                      ><span class="label">Twitter</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands fa-facebook-f"
-                      ><span class="label">Facebook</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands fa-instagram"
-                      ><span class="label">Instagram</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands fa-pinterest"
-                      ><span class="label">Pinterest</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands fa-dribbble"
-                      ><span class="label">Dribbble</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="icon brands fa-linkedin-in"
-                      ><span class="label">Linkedin</span></a
-                    >
-                  </li>
-                </ul>
-              </section>
+        <div class="row">
+          <div class="col-12">
+            <!-- Contact -->
+            <section class="contact">
+              <header>
+                <h3>Nisl turpis nascetur interdum?</h3>
+              </header>
+              <p>
+                Urna nisl non quis interdum mus ornare ridiculus egestas
+                ridiculus lobortis vivamus tempor aliquet.
+              </p>
+              <ul class="icons">
+                <li>
+                  <a href="#" class="icon brands fa-twitter">
+                    <span class="label">Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-facebook-f"><span
+                      class="label">Facebook</span></a>
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-instagram"><span
+                      class="label">Instagram</span></a>
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-pinterest"><span
+                      class="label">Pinterest</span></a>
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-dribbble"><span
+                      class="label">Dribbble</span></a>
+                </li>
+                <li>
+                  <a href="#" class="icon brands fa-linkedin-in"><span
+                      class="label">Linkedin</span></a>
+                </li>
+              </ul>
+            </section>
 
-              <!-- Copyright -->
-              <div class="copyright">
-                <ul class="menu">
-                  <li>
-                    Made with ❤️ using
-                    <a href="https://html5up.net/helios">Helios</a> theme from
-                    <a href="http://html5up.net">HTML5 UP</a>
-                  </li>
-                </ul>
-              </div>
+            <!-- Copyright -->
+            <div class="copyright">
+              <ul class="menu">
+                <li>
+                  Made with ❤️ using
+                  <a href="https://html5up.net/helios">Helios</a> theme from
+                  <a href="http://html5up.net">HTML5 UP</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
