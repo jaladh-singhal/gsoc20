@@ -79,15 +79,22 @@
         <p>
           <a href="https://github.com/tardis-sn">TARDIS</a> is an Open Source
           Astrophysics Org which provides Python packages for rapid spectral
-          modeling of <a href="">Supernovae</a>. In simpler terms, it allows
+          modeling of <a
+            href="https://en.wikipedia.org/wiki/Supernova">Supernovae</a>. In
+          simpler terms, it allows
           researchers to quickly simulate the exploding Stars. In GSoC’20,
-          <a href="">my project</a> was to build a GUI that makes it easier
+          <a
+            href="https://summerofcode.withgoogle.com/projects/#5290824201404416">my
+            project</a> was to build a GUI that makes it easier
           for researchers to explore the data of a simulated Supernova model,
           without knowing its internal data structure. This GUI needed to be
           implemented as several Jupyter widgets that can run within Notebook
           by simply passing the model to a tardis constructor. Hence most of
           my work revolved around developing a
-          <a href="">widgets subpackage</a> within <a href="">tardis</a> that
+          <a
+            href="https://github.com/tardis-sn/tardis/tree/master/tardis/widgets">widgets
+            subpackage</a> within <a
+            href="https://github.com/tardis-sn/tardis">tardis</a> that
           allows users to construct a widget of their interest for the model
           they’re working with.
         </p>
@@ -99,13 +106,17 @@
         </p>
         <ul>
           <li>
-            <a href="">GSoC’20 Episode-1: Interactions with Supernovae!</a> -
+            <a
+              href="https://medium.com/@jaladh_singhal/gsoc20-episode-1-interactions-with-supernovae-f2e033beb5fc?source=friends_link&sk=5889f15e8a4789ae8afc2d1a9a9b299f">GSoC’20
+              Episode-1: Interactions with Supernovae!</a> -
             Importance of studying Supernovae; chemical elements present in
             shells of Supernova ejecta and how they leave their fingerprint in
             the observed light spectrum.
           </li>
           <li>
-            <a href="">GSoC’20 Episode-2: Unpacking the Data hidden in Light</a>
+            <a
+              href="https://medium.com/@jaladh_singhal/gsoc20-episode-2-unpacking-the-data-hidden-in-light-91cd7159b443?source=friends_link&sk=018d2a97564390b9e85f6f45fbcee5c4">GSoC’20
+              Episode-2: Unpacking the Data hidden in Light</a>
             - Different interactions experienced by the light packets escaping
             a Supernova, and how TARDIS constructs spectrum from the
             information packets have.
@@ -155,7 +166,9 @@
         <section id="line-info-widget">
           <h3>Line Info Widget</h3>
           <p>
-            This widget allows users to explore the <a href="">atomic lines</a>
+            This widget allows users to explore the <a
+              href="https://en.wikipedia.org/wiki/Spectral_line">atomic
+              lines</a>
             responsible for producing features in the simulated spectrum. You
             can select any wavelength range in the spectrum interactively to
             display a table giving the fraction of light packets that
@@ -177,14 +190,16 @@
                 href="https://github.com/tardis-sn/tardis/pull/1187"> #1187 </a>
             </li>
             <li>
-              Modified legacy implementation of TARDIS <a href="">Kromer
+              Modified legacy implementation of TARDIS <a
+                href="https://github.com/tardis-sn/tardisanalysis/blob/ff79f155d2a8a9073fba237f3b75dfe31ca9aa31/docu/instructions.md#tardis_kromer_plotpy">Kromer
                 Plot</a> (spectrum as a stacked area chart showing different
               packets’ interactions it is composed of) so that it can be used in
               Line Info Widget instead of a simple spectrum. I made sure it can
               be constructed directly from a simulation object or a saved
               simulation model (HDF) and has data of both real and virtual
               packets. But before I could convert its plotting method
-              (implemented in matplotlib) to interactive <a href="">plotly</a>,
+              (implemented in matplotlib) to interactive <a
+                href="https://plotly.com/python/">plotly</a>,
               we realized it’s overly complicated & outdated and needs to be
               fixed first. So we decided to put it on hold until we release Line
               Info Widget with the simple spectrum, to manage the GSoC deadline
@@ -227,8 +242,9 @@
           </p>
           <ul>
             <li>
-              Applied code style <a href="">Black</a> throughout the TARDIS to
-              make code more readable - <a
+              Applied code style <a
+                href="https://black.readthedocs.io/en/stable/">Black</a>
+              throughout the TARDIS to make code more readable - <a
                 href="https://github.com/tardis-sn/tardis/pull/1201"> #1201
               </a>, <a href="https://github.com/tardis-sn/tardis/pull/1213">
                 #1213 </a>
@@ -317,7 +333,8 @@
           with it!
         </p>
         <p>
-          Like <a href="">last year</a>, this year also GSoC helped me evolve by
+          Like <a href="https://jaladh-singhal.github.io/gsoc19/">last year</a>,
+          this year also GSoC has helped me evolve by
           giving me knowledge about multiple fields as well as by allowing me to
           connect with a group of awesome people. I’m privileged to get a chance
           to work under such great mentors - <a
@@ -329,8 +346,8 @@
             href="https://github.com/harpolea">Alice Harpole</a>, and several
           other TARDIS members - who played a significant role in helping me
           complete this project. It is always fun to work with Open Source
-          communities of your interest and thanks to Google Summer of Code for
-          providing me the opportunity to work with TARDIS!
+          communities of your interest and thanks to Google Summer of Code that
+          I got opportunity to work with TARDIS!
         </p>
       </article>
     </div>
