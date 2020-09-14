@@ -1929,7 +1929,8 @@ footer {
 
 .image.centered img {
   margin: 0 auto;
-  /* width: auto; */ /* Prevents img shrinking due to overriding width: 100%*/
+  width: auto;
+  max-width: 100%; /* Makes sure that image resizes itself on smaller devices*/
 }
 
 /* List */
